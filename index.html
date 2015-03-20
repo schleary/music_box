@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Music Box</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <link  javascript_include_tag 'application' >
   <link  rel="stylesheet" type="text/css" href="index.css">
-  <!-- <link  stylesheet_link_tag 'application', media: 'all' > -->
+  <link  stylesheet_link_tag 'application', media: 'all' >
   <link  csrf_meta_tags >
 </head>
 
@@ -14,32 +15,32 @@
     <source src="c_note.ogg" type="audio/ogg"></source>
     <source src="c_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="dAudio">
     <source src="d_note.mp3" type="audio/mpeg"></source>
     <source src="d_note.ogg" type="audio/ogg"></source>
     <source src="d_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="eAudio">
     <source src="e_note.mp3" type="audio/mpeg"></source>
     <source src="e_note.ogg" type="audio/ogg"></source>
     <source src="e_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="fAudio">
     <source src="f_note.mp3" type="audio/mpeg"></source>
     <source src="f_note.ogg" type="audio/ogg"></source>
     <source src="f_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="gAudio">
     <source src="g_note.mp3" type="audio/mpeg"></source>
     <source src="g_note.ogg" type="audio/ogg"></source>
     <source src="g_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="aAudio">
     <source src="a_note.mp3" type="audio/mpeg"></source>
     <source src="a_note.ogg" type="audio/ogg"></source>
     <source src="a_note.wav" type="audio/wav"></source>
   </audio>
-  <audio id="cAudio">
+  <audio id="bAudio">
     <source src="b_note.mp3" type="audio/mpeg"></source>
     <source src="b_note.ogg" type="audio/ogg"></source>
     <source src="b_note.wav" type="audio/wav"></source>
@@ -54,6 +55,52 @@
     <div id="a" class="box"></div>
     <div id="b" class="box"></div>
   </div>
+
+<script>
+  var cNote = document.getElementById("cAudio");
+  var dNote = document.getElementById("dAudio");
+  var eNote = document.getElementById("eAudio");
+  var fNote = document.getElementById("fAudio");
+  var gNote = document.getElementById("gAudio");
+  var aNote = document.getElementById("aAudio");
+  var bNote = document.getElementById("bAudio");
+
+  $('#c').mousedown(function(){
+    cNote.currentTime = 0;
+    cNote.play();
+  });
+
+  $('#d').mousedown(function(){
+    dNote.currentTime = 0;
+    dNote.play();
+  });
+
+  $('#e').mousedown(function(){
+    eNote.currentTime = 0;
+    eNote.play();
+  });
+
+  $('#f').mousedown(function(){
+    fNote.currentTime = 0;
+    fNote.play();
+  });
+
+  $('#g').mousedown(function(){
+    gNote.currentTime = 0;
+    gNote.play();
+  });
+
+  $('#a').mousedown(function(){
+    aNote.currentTime = 0;
+    aNote.play();
+  });
+
+  $('#b').mousedown(function(){
+    bNote.currentTime = 0;
+    bNote.play();
+  });
+
+</script>
 
 </body>
 </html>
